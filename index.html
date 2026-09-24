@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>陈家乐 · 个人作品集</title>
+  <meta name="description" content="陈家乐的个人作品集：项目作品、技能方向与联系方式。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ 顶部导航 ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="logo" href="#top">陈家乐<span class="dot">.</span></a>
+      <nav class="site-nav" id="siteNav" aria-label="页面导航">
+        <a href="#work">作品</a>
+        <a href="#about">关于</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="切换到深色主题" title="切换到深色主题">
+        <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.5"/>
+          <path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"/>
+        </svg>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="切换导航" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- ============ 开场：大字姓名 + 人像 ============ -->
+    <section class="hero" id="top">
+      <div class="hero-topline">
+        <span>PORTFOLIO / 2026</span>
+        <span>前端开发 · 移动端方向 / 广州</span>
+      </div>
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="hero-hello">你好，我是</p>
+          <h1 class="hero-name">陈家乐<span class="dot">.</span></h1>
+          <p class="hero-tagline">构建清晰、有温度的数字产品</p>
+          <p class="hero-desc">计算机相关专业在读，专注于 Web 前端与 Flutter 移动端开发，也热衷探索 AI 辅助开发。喜欢把课堂与生活中的想法做成能用、好看的产品，这个作品集就是其中之一。</p>
+        </div>
+        <figure class="hero-portrait">
+          <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=portrait%20photo%20of%20a%20young%20Asian%20male%20university%20student%2C%20short%20black%20hair%2C%20gentle%20confident%20smile%2C%20white%20shirt%20with%20dark%20knit%20vest%2C%20solid%20warm%20orange%20background%2C%20soft%20studio%20lighting%2C%20upper%20body%2C%20realistic%20photography%2C%20high%20quality&image_size=portrait_4_3" alt="陈家乐的个人照片">
+          <figcaption>CHEN JIALE / PORTFOLIO 2026</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 01 项目作品 -->
+    <section class="section" id="work">
+      <header class="section-head">
+        <span class="section-no">01</span>
+        <h2>项目作品</h2>
+        <span class="section-count" id="projectCount"></span>
+      </header>
+      <p class="section-desc">每个项目都从真实需求出发，包含完整的开发过程与最终成品。项目会持续更新。</p>
+      <div class="project-list" id="projectList"><!-- 由 js/main.js 依据 js/data.js 渲染 --></div>
+    </section>
+
+    <!-- 02 关于我 -->
+    <section class="section" id="about">
+      <header class="section-head">
+        <span class="section-no">02</span>
+        <h2>关于我</h2>
+      </header>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>我是一名计算机相关专业的在校学生。大一开始接触编程，从写页面开始慢慢入了前端的门，后来又因为想做"装进手机里的作品"开始学习 <strong>Flutter</strong>。</p>
+          <p>比起堆功能，我更在意产品是否<strong>真的可用、细节是否经得起看</strong>：一个交互的反馈、一段排版的呼吸感，我都会反复打磨。课程项目之外，我习惯把学到的技术立刻做成小作品练手，这个作品集网站本身就是其中之一。</p>
+          <p>目前我在寻找一份<strong>前端或移动端方向的实习</strong>，希望能参与真实产品的开发，和团队一起把东西做到位。</p>
+        </div>
+        <aside class="facts reveal">
+          <div class="fact"><p class="k">教育背景</p><p class="v">计算机相关专业 · 本科在读</p></div>
+          <div class="fact"><p class="k">当前状态</p><p class="v">可实习 · 2026 届</p></div>
+          <div class="fact"><p class="k">所在地</p><p class="v">中国 · 广州</p></div>
+          <div class="fact"><p class="k">正在学习</p><p class="v">Flutter 跨端开发 / Node.js</p></div>
+        </aside>
+      </div>
+      <h2 class="block-label">Skills · 技能方向</h2>
+      <div class="skills-row" id="skillList"><!-- 由 js/main.js 渲染 --></div>
+    </section>
+
+    <!-- 03 联系方式 -->
+    <section class="section section-contact" id="contact">
+      <header class="section-head">
+        <span class="section-no">03</span>
+        <h2>联系方式</h2>
+      </header>
+      <div class="reveal">
+        <p class="contact-lead">如果你对我的项目感兴趣，无论是交流合作还是实习机会，都欢迎随时联系我。</p>
+        <a class="contact-mail" href="mailto:chenjiale@example.com">chenjiale@example.com</a>
+        <div class="contact-links">
+          <a href="https://github.com/username" target="_blank" rel="noopener">GitHub ↗</a>
+          <span>微信：chenjiale_dev</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> 陈家乐</span>
+      <span>Designed &amp; Built with 原生 HTML / CSS / JS</span>
+    </footer>
+
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
